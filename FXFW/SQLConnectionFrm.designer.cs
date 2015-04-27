@@ -56,14 +56,14 @@
             this.TxtReportPath = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.GBReport = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TxtSSRSDomain = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.TxtSSRSUserName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.TxtSSRSPassword = new System.Windows.Forms.TextBox();
             this.btnstart = new System.Windows.Forms.Button();
             this.BtnEnd = new System.Windows.Forms.Button();
-            this.TxtSSRSDomain = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.GBDB.SuspendLayout();
             this.PnlAttachDB.SuspendLayout();
             this.PnlSelectDB.SuspendLayout();
@@ -268,7 +268,6 @@
             // 
             // TxtPW
             // 
-            this.TxtPW.Enabled = false;
             this.TxtPW.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPW.Location = new System.Drawing.Point(135, 116);
             this.TxtPW.Name = "TxtPW";
@@ -289,7 +288,6 @@
             // 
             // TxtID
             // 
-            this.TxtID.Enabled = false;
             this.TxtID.Location = new System.Drawing.Point(135, 92);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(139, 20);
@@ -374,6 +372,23 @@
             this.GBReport.Text = "Reporting";
             this.GBReport.Visible = false;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Location = new System.Drawing.Point(11, 133);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 13);
+            this.label11.TabIndex = 70;
+            this.label11.Text = "Report Server Domain :";
+            // 
+            // TxtSSRSDomain
+            // 
+            this.TxtSSRSDomain.Location = new System.Drawing.Point(14, 149);
+            this.TxtSSRSDomain.Name = "TxtSSRSDomain";
+            this.TxtSSRSDomain.Size = new System.Drawing.Size(139, 20);
+            this.TxtSSRSDomain.TabIndex = 16;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -434,23 +449,6 @@
             this.BtnEnd.UseVisualStyleBackColor = true;
             this.BtnEnd.Visible = false;
             this.BtnEnd.Click += new System.EventHandler(this.BtnEnd_Click);
-            // 
-            // TxtSSRSDomain
-            // 
-            this.TxtSSRSDomain.Location = new System.Drawing.Point(14, 149);
-            this.TxtSSRSDomain.Name = "TxtSSRSDomain";
-            this.TxtSSRSDomain.Size = new System.Drawing.Size(139, 20);
-            this.TxtSSRSDomain.TabIndex = 16;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(11, 133);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 13);
-            this.label11.TabIndex = 70;
-            this.label11.Text = "Report Server Domain :";
             // 
             // SQLConnectionFrm
             // 

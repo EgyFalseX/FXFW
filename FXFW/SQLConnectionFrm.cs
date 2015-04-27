@@ -10,6 +10,7 @@ namespace FXFW
 {
     public partial class SQLConnectionFrm : Form
     {
+
         #region -   Variables   -
         public string FullConString, DatabaseName;
 
@@ -114,8 +115,9 @@ namespace FXFW
                 {
                     foreach (DataRow row in AllDB.Rows)
                     {
-                        if (row[0].ToString().ToLower() == DatabaseName.ToLower())
-                            CBDBName.Items.Add(row[0].ToString());
+                        //if (row[0].ToString().ToLower() == DatabaseName.ToLower())
+                        //    CBDBName.Items.Add(row[0].ToString());
+                        CBDBName.Items.Add(row[0].ToString());
                     }
                     if (CBDBName.Items.Count == 0)
                     {
@@ -234,5 +236,6 @@ namespace FXFW
             Application.Exit();
         }
         #endregion         #region -   Variables   -
+
     }
 }
