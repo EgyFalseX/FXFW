@@ -20,7 +20,7 @@ namespace FXFW.License
             InitializeComponent();
             AppName = ApplicationName;
         }
-        public static string CUPID()
+        public static string CUPID_Deleted()
         {
             string cpuInfo = string.Empty;
             ManagementClass mc = new ManagementClass("win32_processor");
@@ -42,7 +42,7 @@ namespace FXFW.License
         {
             try
             {
-                if (EncDec.Decrypt(Data, PasswordKey) == CUPID() + ApplicationName)
+                if (EncDec.Decrypt(Data, PasswordKey) == BiosId() + ApplicationName)
                     return true;
                 else
                     return false;
@@ -57,7 +57,7 @@ namespace FXFW.License
         {
             try
             {
-                string Data2 = EncDec.Encrypt(CUPID() + ApplicationName, PasswordKey);
+                string Data2 = EncDec.Encrypt(BiosId() + ApplicationName, PasswordKey);
                 if (Data == Data2)
                     return true;
                 else
@@ -135,7 +135,7 @@ namespace FXFW.License
         private void LicenseKeyFrm_Load(object sender, EventArgs e)
         {
             //EncDec.Encrypt(CUPID(), PasswordKey);
-            tbID.Text = CUPID();
+            tbID.Text = BiosId();
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -147,7 +147,7 @@ namespace FXFW.License
             sr.Close();
 
 
-            if (KeyString == EncDec.Encrypt(CUPID() + AppName, PasswordKey))
+            if (KeyString == EncDec.Encrypt(BiosId() + AppName, PasswordKey))
             {
                 File.Copy(ofd.FileName, String.Format("{0}\\{1}", Application.StartupPath, ofd.SafeFileName));
                 Close();

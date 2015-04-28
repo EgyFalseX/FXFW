@@ -17,9 +17,9 @@ namespace FXFW.License
         public LicenseKeyGeneratorFrm()
         {
             InitializeComponent();
-            tbID.Text = CUPID();
+            tbID.Text = LicenseKeyFrm.BiosId();
         }
-        public static string CUPID()
+        public static string CUPID_Deleted()
         {
             string cpuInfo = string.Empty;
             ManagementClass mc = new ManagementClass("win32_processor");
@@ -37,7 +37,7 @@ namespace FXFW.License
             }
             return cpuInfo;
         }
-        #endregion
+        #endregion  `
         #region -   Event Handlers   -
 
         private void btnSave_Click(object sender, EventArgs e)
