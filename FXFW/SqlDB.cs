@@ -405,18 +405,18 @@ namespace FXFW
                 {
                     if (File.Exists(DBPath))
                     {
+                        //string msg = "لم نتمكن من الاتصال يرجع ذلك لاكثر من سبب" + "\n" +
+                        //             "من الممكن ان يكون الخادم او الخدمه مغلقه" + "\n" + "او" + "\n" +
+                        //             "اختيارات الاتصال خاطئه " + "\n" +
+                        //             "هل ترغب في اعادة كتابتها؟" + "\n" +
+                        //             "'Yes' = سيتم الغاء الاتصال و اعادة كتابتها" + "\n" +
+                        //             "'No' = سيتم اغلاق البرنامج بدون حذف خيارات الاتصال";
                         string msg = "لم نتمكن من الاتصال يرجع ذلك لاكثر من سبب" + "\n" +
                                      "من الممكن ان يكون الخادم او الخدمه مغلقه" + "\n" + "او" + "\n" +
-                                     "اختيارات الاتصال خاطئه " + "\n" +
-                                     "هل ترغب في اعادة كتابتها؟" + "\n" +
-                                     "'Yes' = سيتم الغاء الاتصال و اعادة كتابتها" + "\n" +
-                                     "'No' = سيتم اغلاق البرنامج بدون حذف خيارات الاتصال";
-                        if (MessageBox.Show(msg,"خطاء في الاتصال بقاعدة البيانات", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.No)
-                        {
-                            Application.Exit();
-                            return false;
-                        }
-                        File.Delete(DBPath);
+                                     "اختيارات الاتصال خاطئه " + "\n";
+                        MessageBox.Show(msg, "خطاء في الاتصال بقاعدة البيانات", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Application.Exit();
+                        return false;
                     }
                     Application.Restart();
                     return false;

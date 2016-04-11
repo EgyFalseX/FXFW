@@ -235,7 +235,7 @@ namespace FXFW
             //me.Close();
             Application.Exit();
         }
-        #endregion         #region -   Variables   -
+        #endregion
 
     }
 }

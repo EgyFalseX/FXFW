@@ -102,7 +102,6 @@
             // 
             // BtnConnect
             // 
-            this.BtnConnect.Enabled = false;
             this.BtnConnect.ForeColor = System.Drawing.Color.Black;
             this.BtnConnect.Location = new System.Drawing.Point(135, 143);
             this.BtnConnect.Name = "BtnConnect";
@@ -363,6 +362,7 @@
             this.GBReport.Controls.Add(this.TxtReportSrvPort);
             this.GBReport.Controls.Add(this.TxtReportPath);
             this.GBReport.Controls.Add(this.label7);
+            this.GBReport.Enabled = false;
             this.GBReport.ForeColor = System.Drawing.Color.Lime;
             this.GBReport.Location = new System.Drawing.Point(15, 315);
             this.GBReport.Name = "GBReport";

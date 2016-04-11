@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FXFW")]
-[assembly: AssemblyDescription("Release Date: 2013-01-24")]
+[assembly: AssemblyDescription("Release Date: 2016-04-11")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("[Egy]FalseX")]
 [assembly: AssemblyProduct("FXFW")]
-[assembly: AssemblyCopyright("Copyright © Mohamed Aly Omer 2012")]
+[assembly: AssemblyCopyright("Copyright © Mohamed Aly Omer 2011 - 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.4")]
-[assembly: AssemblyFileVersion("1.0.0.4")]
+[assembly: AssemblyVersion("1.0.0.5")]
+[assembly: AssemblyFileVersion("1.0.0.5")]
