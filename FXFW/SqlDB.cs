@@ -156,7 +156,7 @@ namespace FXFW
         }
         public static bool CheckDBWorking(string AccessConnectionString)
         {
-            using (SqlConnection con = new SqlConnection(AccessConnectionString))
+            using (SqlConnection con = new SqlConnection(AccessConnectionString + ";Connection Timeout=60"))
             {
                 try
                 {
