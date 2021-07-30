@@ -379,6 +379,20 @@ namespace FXFW
                 return false;
             }
         }
+
+        public static string GetSqlConStr()
+        {
+            if (File.Exists(DBPath))
+            {
+                string[] ConfigArr = Bytes2String(File.ReadAllBytes(DBPath)).Split(Convert.ToChar("|"));
+                if (ConfigArr.Length > 0)
+                {
+                    SqlConStr = ConfigArr[0];
+                }
+            }
+
+            return SqlConStr;
+        }
         public static bool LoadSqlDBPath(string DatabaseName)
         {
             try
